@@ -1,0 +1,12 @@
+node_modules
+dist
+dist-ssr
+*.local
+*.tsbuildinfo
+.vite
+.vercel
+.DS_Store
+Thumbs.db
+logs
+*.log
+npm-debug.log*
