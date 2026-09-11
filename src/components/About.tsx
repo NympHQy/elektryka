@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import { aboutParagraphs, stats } from '@/data/site'
+import { aboutParagraphs, site, stats } from '@/data/site'
 import { drawLine, EASE, viewportOnce } from '@/lib/motion'
 import { Counter } from './ui/Counter'
 import { Eyebrow } from './ui/Eyebrow'
@@ -37,7 +37,7 @@ export function About() {
               </Reveal>
             ))}
             <Reveal delay={0.2} className="mt-8 flex items-center gap-3 border-t border-line pt-6">
-              <span className="font-display text-lg font-extrabold tracking-[-0.05em]">VOLT</span>
+              <span className="font-display text-lg font-extrabold tracking-[-0.05em]">{site.name}</span>
               <span className="label">Zespół wykonawczy</span>
             </Reveal>
           </div>

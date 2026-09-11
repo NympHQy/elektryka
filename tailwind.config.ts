@@ -1,7 +1,7 @@
 import type { Config } from 'tailwindcss'
 
 /**
- * Design tokens — VOLT
+ * Design tokens — FAZA
  * Light, editorial, high-contrast typography, one restrained accent.
  */
 export default {
@@ -34,7 +34,7 @@ export default {
       },
       fontSize: {
         // fluid display scale
-        d1: ['clamp(2.1rem, 10.9vw, 10rem)', { lineHeight: '0.9', letterSpacing: '-0.048em' }],
+        d1: ['clamp(1.65rem, 9.1vw, 8.75rem)', { lineHeight: '0.92', letterSpacing: '-0.045em' }],
         d2: ['clamp(2.25rem, 5.6vw, 5.25rem)', { lineHeight: '0.96', letterSpacing: '-0.04em' }],
         d3: ['clamp(1.75rem, 3.4vw, 3.25rem)', { lineHeight: '1.02', letterSpacing: '-0.035em' }],
         d4: ['clamp(1.35rem, 2.2vw, 2rem)', { lineHeight: '1.1', letterSpacing: '-0.025em' }],

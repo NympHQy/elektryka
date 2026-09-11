@@ -4,11 +4,11 @@
  */
 
 export const site = {
-  name: 'VOLT',
+  name: 'FAZA',
   tagline: 'Usługi elektryczne',
   phoneLabel: '+48 500 600 700',
   phoneHref: 'tel:+48500600700',
-  email: 'kontakt@volt-elektryk.pl',
+  email: 'kontakt@faza-elektryk.pl',
   area: 'Warszawa i okolice — do 60 km',
   years: 12,
   projectsCount: '100+',
@@ -23,6 +23,12 @@ export const navItems: NavItem[] = [
   { label: 'Pomiary', href: '#pomiary' },
   { label: 'Kontakt', href: '#kontakt' },
 ]
+
+/** Nagłówek hero — każdy element to osobna linia odsłaniana zza maski. */
+export const heroHeadline = ['Usługi', 'elektryczne', 'dla domów i firm.'] as const
+
+export const heroSubline =
+  'Instalacje, modernizacje, usuwanie awarii i pomiary elektryczne. Dla mieszkań, domów jednorodzinnych i obiektów firmowych.'
 
 export const heroTrust = [
   'Profesjonalna obsługa',
@@ -80,7 +86,7 @@ export const services: Service[] = [
 ]
 
 export const aboutParagraphs = [
-  'VOLT to zespół, dla którego instalacja nie kończy się na tym, że światło się zapala. Pracujemy metodycznie: planujemy, prowadzimy, opisujemy i mierzymy.',
+  'FAZA to zespół, dla którego instalacja nie kończy się na tym, że światło się zapala. Pracujemy metodycznie: planujemy, prowadzimy, opisujemy i mierzymy.',
   'Efekt naszej pracy zostaje schowany w ścianie i w rozdzielnicy. To właśnie on decyduje o bezpieczeństwie budynku przez kolejne dwadzieścia lat.',
 ] as const
 
@@ -145,3 +151,9 @@ export const processSteps = [
   { index: '03', title: 'Realizacja', description: 'Wykonujemy usługę.' },
   { index: '04', title: 'Odbiór', description: 'Sprawdzamy efekty i kończymy realizację.' },
 ] as const
+
+/** Sekcja końcowa. */
+export const ctaHeadline = ['Potrzebujesz', 'elektryka?'] as const
+
+export const ctaText =
+  'Zajmiemy się instalacją od A do Z — od drobnych napraw i dodatkowych gniazdek, po nowe instalacje, rozdzielnice i pomiary.'

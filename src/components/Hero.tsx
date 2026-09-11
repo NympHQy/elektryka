@@ -1,12 +1,10 @@
 import { useRef } from 'react'
 import { motion, useReducedMotion, useScroll, useTransform } from 'framer-motion'
 import { ArrowDownRight, Check, Phone } from 'lucide-react'
-import { heroTrust, site } from '@/data/site'
+import { heroHeadline, heroSubline, heroTrust, site } from '@/data/site'
 import { EASE } from '@/lib/motion'
 import { SwitchboardArt } from './art/SwitchboardArt'
 import { ButtonLink } from './ui/Button'
-
-const HEADLINE = ['Energia.', 'Której możesz', 'zaufać.']
 
 export function Hero() {
   const ref = useRef<HTMLDivElement>(null)
@@ -36,7 +34,7 @@ export function Hero() {
 
         {/* nagłówek na pełnej szerokości — 3 linie, bez łamania */}
         <h1 className="mt-8 text-d1 font-extrabold uppercase sm:mt-10">
-          {HEADLINE.map((line, i) => (
+          {heroHeadline.map((line, i) => (
             <span key={line} className="block overflow-hidden pb-[0.03em]">
               <motion.span
                 className="block"
@@ -44,7 +42,7 @@ export function Hero() {
                 animate={{ y: '0%' }}
                 transition={{ duration: 1, ease: EASE, delay: 0.18 + i * 0.09 }}
               >
-                {i === HEADLINE.length - 1 ? (
+                {i === heroHeadline.length - 1 ? (
                   <span className="relative inline-block">
                     {line}
                     <motion.span
@@ -72,7 +70,7 @@ export function Hero() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, ease: EASE, delay: 0.55 }}
             >
-              Profesjonalne usługi elektryczne, instalacje oraz pomiary dla domów, mieszkań i firm.
+              {heroSubline}
             </motion.p>
 
             <motion.div

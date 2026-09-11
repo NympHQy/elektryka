@@ -1,6 +1,6 @@
 import { motion, useReducedMotion } from 'framer-motion'
 import { Phone } from 'lucide-react'
-import { site } from '@/data/site'
+import { ctaHeadline, ctaText, site } from '@/data/site'
 import { EASE, viewportOnce } from '@/lib/motion'
 import { TextReveal } from './ui/TextReveal'
 
@@ -37,18 +37,18 @@ export function CTA() {
           </p>
 
           <TextReveal
-            lines={['Potrzebujesz', 'dobrego elektryka?']}
+            lines={ctaHeadline}
             className="mt-8 text-d2 font-extrabold uppercase text-paper"
           />
 
           <motion.p
-            className="mt-7 max-w-[40ch] text-[1.0625rem] leading-relaxed text-paper/60"
+            className="mt-7 max-w-[56ch] text-[1.0625rem] leading-relaxed text-paper/60 sm:text-[1.1875rem]"
             initial={{ opacity: 0, y: reduce ? 0 : 14 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={viewportOnce}
             transition={{ duration: 0.8, ease: EASE, delay: 0.2 }}
           >
-            Porozmawiajmy o Twojej instalacji.
+            {ctaText}
           </motion.p>
 
           <motion.div
