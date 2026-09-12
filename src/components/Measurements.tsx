@@ -51,7 +51,7 @@ export function Measurements() {
               className="mt-7 text-d2 font-extrabold uppercase"
             />
             <Reveal delay={0.1} as="p" className="mt-7 max-w-[46ch] text-[1.0625rem] leading-relaxed text-ink-500">
-              Wykonujemy profesjonalne pomiary i kontrole instalacji elektrycznych.
+              Wykonujemy profesjonalne pomiary i kontrole instalacji elektrycznych w Kielcach i okolicach.
             </Reveal>
 
             <motion.ul

@@ -4,12 +4,12 @@
  */
 
 export const site = {
-  name: 'FAZA',
+  name: 'Volcik',
   tagline: 'Usługi elektryczne',
-  phoneLabel: '+48 500 600 700',
-  phoneHref: 'tel:+48500600700',
-  email: 'kontakt@faza-elektryk.pl',
-  area: 'Warszawa i okolice — do 60 km',
+  phoneLabel: '+48 735 851 141',
+  phoneHref: 'tel:+48735851141',
+  email: 'kontakt@volcik.pl',
+  area: 'Kielce i okolice',
 } as const
 
 export type NavItem = { label: string; href: string }
@@ -25,7 +25,7 @@ export const navItems: NavItem[] = [
 export const heroHeadline = ['Usługi', 'elektryczne', 'dla domów i firm.'] as const
 
 export const heroSubline =
-  'Instalacje, modernizacje, usuwanie awarii i pomiary elektryczne. Dla mieszkań, domów jednorodzinnych i obiektów firmowych.'
+  'Elektryk w Kielcach i okolicach — instalacje, modernizacje, usuwanie awarii i pomiary elektryczne. Dla mieszkań, domów i firm.'
 
 /**
  * Zdjęcia sekcji — pliki w public/images. Brakujący plik zastępuje
@@ -92,7 +92,7 @@ export const services: Service[] = [
 ]
 
 export const aboutParagraphs = [
-  'FAZA to zespół, dla którego instalacja nie kończy się na tym, że światło się zapala. Pracujemy metodycznie: planujemy, prowadzimy, opisujemy i mierzymy.',
+  'Volcik to zespół, dla którego instalacja nie kończy się na tym, że światło się zapala. Pracujemy metodycznie: planujemy, prowadzimy, opisujemy i mierzymy.',
   'Efekt naszej pracy zostaje schowany w ścianie i w rozdzielnicy. To właśnie on decyduje o bezpieczeństwie budynku przez kolejne dwadzieścia lat.',
 ] as const
 
@@ -155,4 +155,23 @@ export const contactForm = {
     'Inne',
   ],
   consent: 'Wyrażam zgodę na przetwarzanie podanych danych w celu odpowiedzi na moje zapytanie.',
+} as const
+
+/**
+ * SEO — z tych danych plugin w vite.config.ts buduje <head>, dane strukturalne,
+ * robots.txt i sitemap.xml. Po podpięciu własnej domeny ustaw VITE_SITE_URL na Vercelu.
+ */
+export const seo = {
+  siteUrl: 'https://elektryka-cqeu.vercel.app',
+  title: 'Elektryk Kielce — Volcik | Instalacje elektryczne i pomiary',
+  description:
+    'Elektryk w Kielcach i okolicach: instalacje elektryczne, pomiary z protokołem, modernizacje, usuwanie awarii i drobne naprawy. Domy, mieszkania i firmy.',
+  ogImage: '/og.jpg',
+  ogImageAlt: 'Volcik — usługi elektryczne dla domów i firm, Kielce i okolice',
+  locality: 'Kielce',
+  region: 'świętokrzyskie',
+  areaServed: [
+    { type: 'City', name: 'Kielce' },
+    { type: 'AdministrativeArea', name: 'powiat kielecki' },
+  ],
 } as const

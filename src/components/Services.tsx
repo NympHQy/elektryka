@@ -14,7 +14,7 @@ export function Services() {
           eyebrow="Usługi · 01"
           meta="06 obszarów"
           lines={['Kompleksowa', 'obsługa elektryczna.']}
-          intro="Sześć obszarów, w których pracujemy na co dzień — od pierwszego przewodu po protokół końcowy. Zakres dobieramy do budynku, nie do cennika."
+          intro="Sześć obszarów, w których pracujemy na co dzień w Kielcach i okolicach — od pierwszego przewodu po protokół końcowy. Zakres dobieramy do budynku, nie do cennika."
         />
 
         <ul className="mt-16 border-t border-line sm:mt-20">

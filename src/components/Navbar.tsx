@@ -49,7 +49,7 @@ export function Navbar() {
           )}
         >
           <a href="#top" className="group flex items-baseline gap-3" aria-label={`${site.name} — strona główna`}>
-            <span className="font-display text-[1.375rem] font-extrabold tracking-[-0.06em] leading-none">
+            <span className="font-display text-[1.375rem] font-extrabold uppercase tracking-[-0.06em] leading-none">
               {site.name}
               <span className="text-accent-600">.</span>
             </span>
@@ -102,7 +102,7 @@ export function Navbar() {
             transition={{ duration: 0.35, ease: EASE }}
           >
             <div className="shell flex h-[88px] items-center justify-between">
-              <span className="font-display text-[1.375rem] font-extrabold tracking-[-0.06em]">
+              <span className="font-display text-[1.375rem] font-extrabold uppercase tracking-[-0.06em]">
                 {site.name}
                 <span className="text-accent-600">.</span>
               </span>

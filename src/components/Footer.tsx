@@ -9,7 +9,7 @@ export function Footer() {
       <div className="shell">
         <div className="grid grid-cols-1 gap-12 sm:grid-cols-2 lg:grid-cols-12 lg:gap-gutter">
           <Reveal className="lg:col-span-5">
-            <p className="font-display text-[2rem] font-extrabold leading-none tracking-[-0.06em] sm:text-[2.5rem]">
+            <p className="font-display text-[2rem] font-extrabold uppercase leading-none tracking-[-0.06em] sm:text-[2.5rem]">
               {site.name}
               <span className="text-accent-600">.</span>
             </p>

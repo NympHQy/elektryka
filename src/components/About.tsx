@@ -36,7 +36,7 @@ export function About() {
               </Reveal>
             ))}
             <Reveal delay={0.2} className="mt-8 flex items-center gap-3 border-t border-line pt-6">
-              <span className="font-display text-lg font-extrabold tracking-[-0.05em]">{site.name}</span>
+              <span className="font-display text-lg font-extrabold uppercase tracking-[-0.05em]">{site.name}</span>
               <span className="label">Zespół wykonawczy</span>
             </Reveal>
           </div>

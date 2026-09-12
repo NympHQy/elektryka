@@ -1,7 +1,7 @@
 import type { Config } from 'tailwindcss'
 
 /**
- * Design tokens — FAZA
+ * Design tokens — Volcik
  * Light, editorial, high-contrast typography, one restrained accent.
  */
 export default {
