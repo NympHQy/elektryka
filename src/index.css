@@ -84,6 +84,11 @@
     @apply origin-left scale-x-100;
   }
 
+  /* na ciemnym tle obrys fokusu w kolorze akcentu */
+  .on-dark :focus-visible {
+    outline-color: var(--accent);
+  }
+
   .mask-fade-x {
     -webkit-mask-image: linear-gradient(to right, transparent, #000 8%, #000 92%, transparent);
     mask-image: linear-gradient(to right, transparent, #000 8%, #000 92%, transparent);

@@ -21,6 +21,7 @@ export default {
         },
         line: 'rgba(14, 14, 12, 0.10)',
         'line-strong': 'rgba(14, 14, 12, 0.18)',
+        signal: '#FF9B8A',
         accent: {
           DEFAULT: '#D8F44B',
           600: '#C3DE33',

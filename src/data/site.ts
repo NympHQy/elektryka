@@ -143,3 +143,16 @@ export const ctaHeadline = ['Potrzebujesz', 'elektryka?'] as const
 
 export const ctaText =
   'Zajmiemy się instalacją od A do Z — od drobnych napraw i dodatkowych gniazdek, po nowe instalacje, rozdzielnice i pomiary.'
+
+/** Formularz kontaktowy w sekcji końcowej. */
+export const contactForm = {
+  services: [
+    'Instalacja elektryczna',
+    'Pomiary elektryczne',
+    'Modernizacja instalacji',
+    'Usuwanie awarii',
+    'Drobne naprawy i gniazdka',
+    'Inne',
+  ],
+  consent: 'Wyrażam zgodę na przetwarzanie podanych danych w celu odpowiedzi na moje zapytanie.',
+} as const
