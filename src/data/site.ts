@@ -10,8 +10,6 @@ export const site = {
   phoneHref: 'tel:+48500600700',
   email: 'kontakt@faza-elektryk.pl',
   area: 'Warszawa i okolice — do 60 km',
-  years: 12,
-  projectsCount: '100+',
 } as const
 
 export type NavItem = { label: string; href: string }
@@ -19,7 +17,6 @@ export type NavItem = { label: string; href: string }
 export const navItems: NavItem[] = [
   { label: 'O nas', href: '#o-nas' },
   { label: 'Usługi', href: '#uslugi' },
-  { label: 'Realizacje', href: '#realizacje' },
   { label: 'Pomiary', href: '#pomiary' },
   { label: 'Kontakt', href: '#kontakt' },
 ]
@@ -29,6 +26,15 @@ export const heroHeadline = ['Usługi', 'elektryczne', 'dla domów i firm.'] as 
 
 export const heroSubline =
   'Instalacje, modernizacje, usuwanie awarii i pomiary elektryczne. Dla mieszkań, domów jednorodzinnych i obiektów firmowych.'
+
+/**
+ * Zdjęcia sekcji — pliki w public/images. Brakujący plik zastępuje
+ * wektorowa ilustracja, więc podmieniać można je pojedynczo.
+ */
+export const photos = {
+  hero: { src: '/images/hero.jpg', alt: 'Nowoczesna rozdzielnica elektryczna z uporządkowanymi zabezpieczeniami' },
+  measurements: { src: '/images/pomiary.jpg', alt: 'Miernik instalacji elektrycznych obok protokołu pomiarowego' },
+} as const
 
 export const heroTrust = [
   'Profesjonalna obsługa',
@@ -90,12 +96,6 @@ export const aboutParagraphs = [
   'Efekt naszej pracy zostaje schowany w ścianie i w rozdzielnicy. To właśnie on decyduje o bezpieczeństwie budynku przez kolejne dwadzieścia lat.',
 ] as const
 
-export const stats = [
-  { value: '100+', label: 'Realizacji' },
-  { value: `${site.years} lat`, label: 'Doświadczenia' },
-  { value: '100%', label: 'Zaangażowania' },
-] as const
-
 export const measurementItems = [
   'Pomiary instalacji elektrycznych',
   'Pomiary odbiorcze',
@@ -130,20 +130,6 @@ export const reasons = [
       'Szanujemy czas naszych klientów. Ustalony termin traktujemy jak zobowiązanie.',
   },
 ] as const
-
-export type Project = {
-  title: string
-  meta: string
-  category: string
-  art: 'house' | 'switchboard' | 'office' | 'measure'
-}
-
-export const projects: Project[] = [
-  { title: 'Instalacja domu jednorodzinnego', meta: 'Konstancin · 186 m²', category: 'Instalacja', art: 'house' },
-  { title: 'Modernizacja rozdzielnicy', meta: 'Warszawa, Mokotów', category: 'Modernizacja', art: 'switchboard' },
-  { title: 'Instalacja biurowa', meta: 'Warszawa, Wola · 340 m²', category: 'Firma', art: 'office' },
-  { title: 'Pomiary elektryczne', meta: 'Piaseczno · protokół odbiorczy', category: 'Pomiary', art: 'measure' },
-]
 
 export const processSteps = [
   { index: '01', title: 'Kontakt', description: 'Opisujesz nam swoje potrzeby.' },

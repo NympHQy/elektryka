@@ -1,7 +1,6 @@
 import { motion } from 'framer-motion'
-import { aboutParagraphs, site, stats } from '@/data/site'
-import { drawLine, EASE, viewportOnce } from '@/lib/motion'
-import { Counter } from './ui/Counter'
+import { aboutParagraphs, site } from '@/data/site'
+import { EASE, viewportOnce } from '@/lib/motion'
 import { Eyebrow } from './ui/Eyebrow'
 import { Reveal } from './ui/Reveal'
 import { TextReveal } from './ui/TextReveal'
@@ -43,36 +42,6 @@ export function About() {
           </div>
         </div>
 
-        {/* statystyki — bez liczników kołowych, sama typografia i hairline'y */}
-        <motion.div
-          className="mt-20 border-t border-line sm:mt-28"
-          initial="hidden"
-          whileInView="show"
-          viewport={viewportOnce}
-        >
-          <motion.span
-            aria-hidden
-            className="block h-px w-full origin-left bg-ink"
-            variants={drawLine}
-          />
-          <dl className="grid grid-cols-1 sm:grid-cols-3">
-            {stats.map((stat, i) => (
-              <motion.div
-                key={stat.label}
-                className="flex flex-col border-b border-line py-9 sm:border-b-0 sm:border-r sm:border-line sm:py-12 sm:last:border-r-0 sm:[&:not(:first-child)]:pl-8 lg:[&:not(:first-child)]:pl-14"
-                variants={{
-                  hidden: { opacity: 0, y: 20 },
-                  show: { opacity: 1, y: 0, transition: { duration: 0.7, ease: EASE, delay: 0.15 + i * 0.1 } },
-                }}
-              >
-                <dt className="label order-2 mt-4 block">{stat.label}</dt>
-                <dd className="order-1 text-stat font-extrabold uppercase leading-none">
-                  <Counter value={stat.value} />
-                </dd>
-              </motion.div>
-            ))}
-          </dl>
-        </motion.div>
       </div>
     </section>
   )

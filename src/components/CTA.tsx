@@ -33,7 +33,7 @@ export function CTA() {
         <div className="relative">
           <p className="flex items-center gap-2.5 font-mono text-micro uppercase text-paper/50">
             <span aria-hidden className="h-1.5 w-1.5 rounded-full bg-accent" />
-            Kontakt · 07
+            Kontakt · 06
           </p>
 
           <TextReveal

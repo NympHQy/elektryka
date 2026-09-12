@@ -1,9 +1,10 @@
 import { useRef } from 'react'
 import { motion, useReducedMotion, useScroll, useTransform } from 'framer-motion'
 import { ArrowDownRight, Check, Phone } from 'lucide-react'
-import { heroHeadline, heroSubline, heroTrust, site } from '@/data/site'
+import { heroHeadline, heroSubline, heroTrust, photos, site } from '@/data/site'
 import { EASE } from '@/lib/motion'
 import { SwitchboardArt } from './art/SwitchboardArt'
+import { Photo } from './ui/Photo'
 import { ButtonLink } from './ui/Button'
 
 export function Hero() {
@@ -102,7 +103,12 @@ export function Hero() {
           >
             <div className="relative aspect-[4/3] w-full overflow-hidden border border-line bg-paper sm:aspect-[16/10]">
               <motion.div style={{ y: artY, scale: artScale }} className="absolute inset-0">
-                <SwitchboardArt className="h-full w-full" />
+                <Photo
+                  src={photos.hero.src}
+                  alt={photos.hero.alt}
+                  priority
+                  fallback={<SwitchboardArt className="h-full w-full" />}
+                />
               </motion.div>
             </div>
 

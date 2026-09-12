@@ -14,7 +14,7 @@ export function Process() {
     <section className="bg-surface py-section">
       <div className="shell">
         <SectionHeader
-          eyebrow="Proces · 06"
+          eyebrow="Proces · 05"
           meta="Cztery etapy"
           lines={['Prosty proces.', 'Profesjonalny efekt.']}
         />

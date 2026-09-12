@@ -6,7 +6,6 @@ import { Marquee } from './components/Marquee'
 import { Measurements } from './components/Measurements'
 import { Navbar } from './components/Navbar'
 import { Process } from './components/Process'
-import { Projects } from './components/Projects'
 import { Services } from './components/Services'
 import { WhyUs } from './components/WhyUs'
 
@@ -21,7 +20,6 @@ export default function App() {
         <About />
         <Measurements />
         <WhyUs />
-        <Projects />
         <Process />
         <CTA />
       </main>

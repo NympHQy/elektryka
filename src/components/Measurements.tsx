@@ -1,8 +1,9 @@
 import { motion, useReducedMotion } from 'framer-motion'
 import { ArrowRight } from 'lucide-react'
-import { measurementItems, site } from '@/data/site'
+import { measurementItems, photos, site } from '@/data/site'
 import { EASE, viewportOnce } from '@/lib/motion'
 import { MeterArt } from './art/MeterArt'
+import { Photo } from './ui/Photo'
 import { Eyebrow } from './ui/Eyebrow'
 import { Reveal } from './ui/Reveal'
 import { TextReveal } from './ui/TextReveal'
@@ -31,7 +32,11 @@ export function Measurements() {
               transition={{ duration: 0.8, ease: EASE, delay: 0.15 }}
             />
             <div className="relative aspect-[4/5] w-full overflow-hidden border border-line">
-              <MeterArt className="h-full w-full" />
+              <Photo
+                src={photos.measurements.src}
+                alt={photos.measurements.alt}
+                fallback={<MeterArt className="h-full w-full" />}
+              />
             </div>
             <div className="mt-4 flex items-baseline justify-between">
               <span className="label">Rezystancja izolacji · 500 V</span>
